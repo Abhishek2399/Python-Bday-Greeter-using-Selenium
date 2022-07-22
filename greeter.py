@@ -12,7 +12,7 @@ from color_print import *
 
 # generic log function for logging the following App logs
 def log(msg):
-    log_folder = r"D:\abhi_work\all_py\birthday_greeter\LOGS\WA_auto.log"
+    log_folder = r"LOGS\WA_auto.log"
     if not path.exists(log_folder):
         mkdir(log_folder)
     # log_file = path.join(log_folder, "WA_auto.log")
@@ -50,7 +50,7 @@ def get_person_bday():
     month = today.month
     try:
         # file_path = path.join(getcwd(), 'CSV', "b_day.csv")
-        file_path = r"D:\abhi_work\all_py\birthday_greeter\CSV\b_day.csv"
+        file_path = r"CSV\b_day.csv"
         # print_green(file_path)
         with open(file_path, 'r') as bday_file:
             try:
